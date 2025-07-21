@@ -1,7 +1,35 @@
+/*----------------------- FONT FAMILIES ------------------------*/
+
 @font-face {
   font-family: 'Riffic';
-  src: url('./assets/RifficFree-Bold.ttf');
+  src: url('./assets/fonts/RifficFree-Bold.ttf');
 }
+
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./assets/fonts/WorkSans-Regular.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./assets/fonts/WorkSans-Bold.ttf');
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./assets/fonts/WorkSans-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./assets/fonts/WorkSans-Light.ttf');
+  font-style: light;
+}
+
+/*----------------------- MAIN ------------------------*/
 
 :root {
   font-family: 'Riffic', system-ui, Avenir, Helvetica, Arial, sans-serif;
