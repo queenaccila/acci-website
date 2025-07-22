@@ -87,7 +87,6 @@ p {
 
 h3 {
   font-size: clamp(0.5rem, 2vw, 2rem);
-  margin: 0.5em;
   color: var(--title-color);
   font-family: 'Work-Sans';
   font-weight: 500;
