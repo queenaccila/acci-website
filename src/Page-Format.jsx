@@ -1,6 +1,8 @@
 import './Page-Format.css'
-import AcciIcon from './assets/bunny-drawings/Web-Icon.png'
 import { useState, useEffect } from 'react'
+
+import AcciIcon from './assets/bunny-drawings/Web-Icon.png'
+import AboutMeIcon from './assets/bunny-drawings/Website-Drawings-About-Me.png'
 
 import Navbar from './components/NavBar'
 import Description from './components/Description'
@@ -19,6 +21,8 @@ function PageFormat({ children }) {
         </div>
 
         <Navbar />
+
+        <img src={AboutMeIcon} className="section-img"/>
 
         <Description
           texts={[

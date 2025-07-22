@@ -23,6 +23,15 @@
   height: auto;
 }
 
+.section-img {
+  display: flex;
+  width: 30%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
 @media (max-width: 768px) {
   .title-container {
     flex-direction: column;
