@@ -18,13 +18,21 @@
   justify-content: center;
 }
 
+.title-icon {
+  width: 12vw;
+  height: auto;
+}
+
 @media (max-width: 768px) {
   .title-container {
     flex-direction: column;
   }
-}
 
-.title-icon {
-  width: 15vw;
-  height: auto;
+  .title-wrapper {
+    padding: 1rem 0;
+  }
+
+  .title-icon {
+    width: 30vw;
+  }
 }

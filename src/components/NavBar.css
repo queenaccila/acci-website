@@ -44,6 +44,15 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    border-radius: 0px;
+  }
+
+  .navbar {
+    margin-top: 7%;
+    border-radius: 1rem;
+  }
+
+  .navbar-single-link {
+    margin-left: 30%;
+    justify-content: left;
   }
 }
