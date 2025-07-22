@@ -23,13 +23,11 @@
 .title-wrapper::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 80%;
   background-color: #f9bec2;
-  padding: 0% 0% 20% 0%;
-  margin: 10% 0% 0% 0%;
+  padding-bottom: 10%;
+  margin-top: 10%;
 }
 
 .title-container h1,

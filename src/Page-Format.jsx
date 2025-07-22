@@ -1,10 +1,12 @@
 import './Page-Format.css'
+import './components/NavBar'
 import AcciIcon from './assets/bunny-drawings/Web-Icon.png'
 import { useState, useEffect } from 'react'
+import Navbar from './components/NavBar'
 
 function PageFormat({ children }) {
   return (
-    <div>
+    <>
        <div className="title-wrapper">
             <div className="title-container">
                 <img src={AcciIcon} className="title-icon" />
@@ -15,10 +17,12 @@ function PageFormat({ children }) {
             </div>
         </div>
 
+        <Navbar />
+
         <main>
             {children}
         </main>
-    </div>
+    </>
   )
 }
 
