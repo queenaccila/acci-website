@@ -8,6 +8,7 @@
     margin-top: 3%;
     margin-left: 30%;
     margin-right: 30%;
+    line-height: clamp(1rem, 3vw, 2rem);
 }
 
 @media (max-width: 768px) {
@@ -15,5 +16,6 @@
         padding: 5%;
         margin-left: 10%;
         margin-right: 10%;
+        line-height: 1rem;
     }
 }
