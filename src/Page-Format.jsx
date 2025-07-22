@@ -1,5 +1,4 @@
 import './Page-Format.css'
-import './components/NavBar'
 import AcciIcon from './assets/bunny-drawings/Web-Icon.png'
 import { useState, useEffect } from 'react'
 
@@ -18,9 +17,15 @@ function PageFormat({ children }) {
                 </div>
             </div>
         </div>
-
+        
         <Navbar />
-        <Description />
+
+        <Description
+          texts={[
+            "Welcome!",
+            "Feel free to explore my website!"
+          ]}
+        />
 
         <main>
             {children}

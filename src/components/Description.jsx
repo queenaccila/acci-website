@@ -1,14 +1,13 @@
-import './Descrption.css'
+import './Description.css'
 
-import PageFormat from './Page-Format.jsx'
-
-function Description() {
+function Description({texts}) {
   return (
-    <>
-        <div>
-        </div>
-    </>
-  )
+    <div className="desc-rect">
+        {texts.map((line, index) => (
+            <p key={index}>{line}</p>
+        ))}
+    </div>
+  );
 }
 
-export default Description
+export default Description;
