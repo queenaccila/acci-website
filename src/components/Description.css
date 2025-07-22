@@ -1,4 +1,19 @@
 .desc-rect {
     background-color: white;
     border-radius: 40px;
+    color: black;
+    padding: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+@media (max-width: 768px) {
+    .desc-rect {
+        padding: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }

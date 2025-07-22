@@ -26,6 +26,7 @@
 @media (max-width: 768px) {
   .title-container {
     flex-direction: column;
+    gap: 0.1rem;
   }
 
   .title-wrapper {

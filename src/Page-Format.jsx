@@ -17,13 +17,14 @@ function PageFormat({ children }) {
                 </div>
             </div>
         </div>
-        
+
         <Navbar />
 
         <Description
           texts={[
-            "Welcome!",
-            "Feel free to explore my website!"
+            <b>Welcome!</b>,
+            "Feel free to explore my website!",
+            "This is another line of text"
           ]}
         />
 
