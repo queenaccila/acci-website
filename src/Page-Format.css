@@ -1,0 +1,33 @@
+/*---------------------------- Custom Title Containers ----------------------------*/
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .title-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.title-container h1,
+.title-container h3 {
+  margin: 5%;
+}
+
+.title-icon {
+  width: 15vw;
+  height: auto;
+}
+
+.pink-rect {
+  background-color: #f9bec2;
+  position: fixed;
+  align-items: center;
+  gap: 1rem;
+  width: 100vw;
+  padding: 1rem;
+}
