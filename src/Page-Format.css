@@ -6,6 +6,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
