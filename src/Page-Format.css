@@ -1,38 +1,27 @@
 /*---------------------------- Custom Title Containers ----------------------------*/
 
+.title-wrapper {
+  width: 100%;
+  background-color: #f9bec2;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
 .title-container {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  position: relative;
-  z-index: 1;
+  gap: 1rem;
+  max-width: 1200px; /* So content doesn't stretch too much */
+  width: 100%;
   justify-content: center;
 }
 
 @media (max-width: 768px) {
   .title-container {
     flex-direction: column;
-    align-items: center;
   }
-}
-
-.title-wrapper {
-    position: relative;
-}
-
-.title-wrapper::before {
-  content: '';
-  position: absolute;
-  width: 100vw;
-  height: 80%;
-  background-color: #f9bec2;
-  padding-bottom: 10%;
-  margin-top: 10%;
-}
-
-.title-container h1,
-.title-container h3 {
-  margin: 5%;
 }
 
 .title-icon {
