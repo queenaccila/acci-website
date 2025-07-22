@@ -30,7 +30,7 @@
 
 .nav-icon {
     fill: #7caeb7;
-    width: 8%;
+    width: 10%;
 }
 
 .navbar-single-link {
@@ -47,12 +47,21 @@
   }
 
   .navbar {
-    margin-top: 7%;
+    margin-top: 5%;
     border-radius: 1rem;
+    background-color: transparent;
   }
 
   .navbar-single-link {
-    margin-left: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 5%;
+    border-radius: 20px;
     justify-content: left;
+    background-color: #f9bec2;
+  }
+
+  .nav-icon {
+    width: 13%;
   }
 }
