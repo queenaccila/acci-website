@@ -32,6 +32,14 @@
   margin: auto;
 }
 
+.bottom-empty {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  padding-bottom: 200px;
+}
+
 @media (max-width: 768px) {
   .title-container {
     flex-direction: column;
@@ -48,5 +56,9 @@
 
   .section-img {
     width: 80%;
+  }
+
+  .bottom-empty {
+    padding-bottom: 100px;
   }
 }

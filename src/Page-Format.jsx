@@ -23,6 +23,10 @@ function PageFormat({imageSrc, description}) {
         <img src={imageSrc} className="section-img"/>
 
         <Description texts={description}/>
+
+        <div className="bottom-empty">
+          <p></p>
+        </div>
     </>
   )
 }
