@@ -28,6 +28,10 @@
   color: #cd7b89;
 }
 
+.navbar-links .active-link {
+  color: #ffffff;
+}
+
 .nav-icon {
     fill: #7caeb7;
     width: 10%;
@@ -37,6 +41,14 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.navbar-single-link a {
+  transition: color 0.3s ease;
+}
+
+.navbar-single-link a:hover {
+  color: #cd7b89;
 }
 
 @media (max-width: 768px) {

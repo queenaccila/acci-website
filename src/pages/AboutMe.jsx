@@ -1,5 +1,4 @@
 import PageFormat from '../Page-Format.jsx'
-
 import AboutMeIcon from '../assets/bunny-drawings/Website-Drawings-About-Me.png'
 
 function AboutMe() {
