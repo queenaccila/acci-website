@@ -2,12 +2,10 @@ import './Page-Format.css'
 import { useState, useEffect } from 'react'
 
 import AcciIcon from './assets/bunny-drawings/Web-Icon.png'
-import AboutMeIcon from './assets/bunny-drawings/Website-Drawings-About-Me.png'
-
 import Navbar from './components/NavBar'
 import Description from './components/Description'
 
-function PageFormat({ children }) {
+function PageFormat({imageSrc, description}) {
   return (
     <>
        <div className="title-wrapper">
@@ -22,20 +20,9 @@ function PageFormat({ children }) {
 
         <Navbar />
 
-        <img src={AboutMeIcon} className="section-img"/>
+        <img src={imageSrc} className="section-img"/>
 
-        <Description
-          texts={[
-            <b>Hi! I’m Helen — or Accila/Acci online!</b>,
-            <i>She/Her - 23 - 9/29</i>,
-            "I’m a new grad software developer and tech artist who likes making fun and cute tech! Whether it’s games, websites, or any creative projects, I enjoy blending code with art and bringing ideas to life.",
-            "If you’re interested in working together or just want to chat, feel free to reach out!"
-          ]}
-        />
-
-        <main>
-            {children}
-        </main>
+        <Description texts={description}/>
     </>
   )
 }
