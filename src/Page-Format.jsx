@@ -7,7 +7,7 @@ import Navbar from './components/NavBar'
 import Description from './components/Description'
 import LinkButton from './components/Button'
 
-function PageFormat({imageSrc, description}) {
+function PageFormat({imageSrc, description, buttonName, buttonLink}) {
   return (
     <>
        <div className="title-wrapper">
@@ -44,8 +44,7 @@ function PageFormat({imageSrc, description}) {
         </motion.div>
 
         {/* Button section */}
-        <Button />
-
+        <LinkButton text={buttonName} redirect={buttonLink}/>
 
         <div className="bottom-empty">
           <p></p>

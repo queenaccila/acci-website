@@ -11,6 +11,8 @@ function AboutMe() {
             "I’m a new grad software developer and tech artist who likes making fun and cute tech! Whether it’s games, websites, or any creative projects, I enjoy blending code with art and bringing ideas to life.",
             "If you’re interested in working together or just want to chat, feel free to reach out!"
         ]}
+        buttonName="Contact Me"
+        buttonLink="mailto:helenho2k1@gmail.com"
     />
   )
 }
