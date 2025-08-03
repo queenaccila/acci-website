@@ -5,6 +5,9 @@ import SocialsIcon from '../assets/bunny-drawings/Website-Drawings-Socials.png'
 
 import AcciIcon from '../assets/bunny-drawings/Web-Icon.png'
 import Navbar from '../components/NavBar'
+import SocialLink from '../components/SocialLink'
+
+import ItchIcon from '../assets/social-icons/itch.io-icon.png'
 
 function Socials() {
   return (
@@ -44,6 +47,13 @@ function Socials() {
     />
 
     {/* Links section */}
+    <div>
+        <SocialLink
+            iconSrc={ItchIcon}
+            label="itch.io"
+            link="https://queenaccila.itch.io/"
+        />
+    </div>
 
     <div className="bottom-empty">
         <p></p>
