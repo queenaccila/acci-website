@@ -74,7 +74,7 @@
 a {
   font-weight: 500;
   color: #646cff;
-  font-size: clamp(0.6rem, 1vw, 2rem);
+  font-size: clamp(0.75rem, 1vw, 2rem);
   align-self: center;
 }
 a:hover {
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .navbar-links a {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1vw, 1.5rem);
 }
 
 p {
@@ -161,11 +161,5 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-links a {
-    font-size: 1rem;
   }
 }
