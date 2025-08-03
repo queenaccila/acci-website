@@ -53,35 +53,70 @@ function Socials() {
 
     {/* Links section */}
     <div>
-        <SocialLink
-            iconSrc={ItchIcon}
-            label="itch.io"
-            link="https://queenaccila.itch.io/"
-        />
+        <motion.div
+            initial={{ opacity: 0, y: 30}}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+        >
+            <SocialLink
+                iconSrc={ItchIcon}
+                label="itch.io"
+                link="https://queenaccila.itch.io/"
+            />
+        </motion.div>
 
-        <SocialLink
-            iconSrc={GitHubIconLight}
-            label="GitHub"
-            link="https://github.com/queenaccila"
-        />
+        <motion.div
+            initial={{ opacity: 0, y: 30}}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+        >
+            <SocialLink
+                iconSrc={GitHubIconLight}
+                label="GitHub"
+                link="https://github.com/queenaccila"
+            />
+        </motion.div>
 
-        <SocialLink
-            iconSrc={YouTubeIcon}
-            label="YouTube"
-            link="https://www.youtube.com/@accila"
-        />
+        <motion.div
+            initial={{ opacity: 0, y: 30}}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
+        >
+            <SocialLink
+                iconSrc={YouTubeIcon}
+                label="YouTube"
+                link="https://www.youtube.com/@accila"
+            />
+        </motion.div>
 
-        <SocialLink
-            iconSrc={BlueskyIcon}
-            label="Bluesky"
-            link="https://bsky.app/profile/queenaccila.bsky.social"
-        />
+        <motion.div
+            initial={{ opacity: 0, y: 30}}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            viewport={{ once: true }}
+        >
+            <SocialLink
+                iconSrc={BlueskyIcon}
+                label="Bluesky"
+                link="https://bsky.app/profile/queenaccila.bsky.social"
+            />
+        </motion.div>
 
-        <SocialLink
-            iconSrc={LinkedIcon}
-            label="LinkedIn"
-            link="https://www.linkedin.com/in/helen-ho-5a496724a/"
-        />
+        <motion.div
+            initial={{ opacity: 0, y: 30}}
+            animate={{ opacity: 1, y: 0}}
+            transition={{ duration: 0.5, delay: 0.7 }}
+            viewport={{ once: true }}
+        >
+            <SocialLink
+                iconSrc={LinkedIcon}
+                label="LinkedIn"
+                link="https://www.linkedin.com/in/helen-ho-5a496724a/"
+            />
+        </motion.div>
     </div>
 
     <div className="bottom-empty">

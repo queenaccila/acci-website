@@ -2,6 +2,8 @@
   padding: 1rem 2rem;
   background-color: #112540;
   color: white;
+  border: none;
+  outline: none;
   border-radius: 40px;
   font-size: 1rem;
   transition: background-color 0.3s ease;
