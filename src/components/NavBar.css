@@ -34,7 +34,8 @@
 
 .nav-icon {
     fill: #7caeb7;
-    width: 10%;
+    width: 3rem;
+    flex-shrink: 0;
 }
 
 .navbar-single-link {
@@ -63,20 +64,21 @@
     margin-top: 5%;
     border-radius: 1rem;
     background-color: transparent;
-    width: 80%;
+    width: 100%;
   }
 
   .navbar-single-link {
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 5%;
-    padding: 3%;
-    border-radius: 20px;
+    padding: 7%;
+    border-radius: 40px;
     justify-content: left;
     background-color: #f9bec2;
   }
 
   .nav-icon {
     width: 1em;
+    flex-shrink: 0;
   }
 }
