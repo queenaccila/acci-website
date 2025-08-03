@@ -15,6 +15,12 @@
   transition-duration: 200ms;
 }
 
+.custom-button:touch {
+  color: #112540;
+  background-color: #7caeb7;
+  transition-duration: 200ms;
+}
+
 .button-container {
     display: flex;
     justify-content: center;

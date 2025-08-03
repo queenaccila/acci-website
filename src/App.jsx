@@ -6,6 +6,7 @@ import AboutMe from './pages/AboutMe.jsx'
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<AboutMe />} />
       <Route path="/about" element={<AboutMe />} />
     </Routes>
   )

@@ -10,15 +10,16 @@ import LinkButton from './components/Button'
 function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
   return (
     <>
-       <div className="title-wrapper">
-            <div className="title-container">
-                <img src={AcciIcon} className="title-icon" />
-                <div>
-                  <h1>Accila</h1>
-                  <h3>Software Dev + Tech Artist</h3>
-                </div>
-            </div>
-        </div>
+        {/* Title section */}
+        <div className="title-wrapper">
+              <div className="title-container">
+                  <img src={AcciIcon} className="title-icon" />
+                  <div>
+                    <h1>Accila</h1>
+                    <h3>Software Dev + Tech Artist</h3>
+                  </div>
+              </div>
+          </div>
 
         {/* Navbar section */}
         <Navbar />
