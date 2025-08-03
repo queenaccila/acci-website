@@ -4,6 +4,7 @@ import AboutMeIcon from '../assets/bunny-drawings/Website-Drawings-About-Me.png'
 function AboutMe() {
   return (
     <PageFormat
+        title="About Me"
         imageSrc={AboutMeIcon}
         description={[
             <b>Hi, I'm Helen!</b>,
