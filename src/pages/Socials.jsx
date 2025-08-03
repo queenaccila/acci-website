@@ -8,6 +8,11 @@ import Navbar from '../components/NavBar'
 import SocialLink from '../components/SocialLink'
 
 import ItchIcon from '../assets/social-icons/itch.io-icon.png'
+import BlueskyIcon from '../assets/social-icons/Bluesky_Logo.svg.png'
+import GitHubIconDark from '../assets/social-icons/github-icon.png'
+import GitHubIconLight from '../assets/social-icons/GitHub_Invertocat_Light.png'
+import LinkedIcon from '../assets/social-icons/LinkedIn_icon.png'
+import YouTubeIcon from '../assets/social-icons/YouTube_icon.png'
 
 function Socials() {
   return (
@@ -52,6 +57,30 @@ function Socials() {
             iconSrc={ItchIcon}
             label="itch.io"
             link="https://queenaccila.itch.io/"
+        />
+
+        <SocialLink
+            iconSrc={GitHubIconLight}
+            label="GitHub"
+            link="https://github.com/queenaccila"
+        />
+
+        <SocialLink
+            iconSrc={YouTubeIcon}
+            label="YouTube"
+            link="https://www.youtube.com/@accila"
+        />
+
+        <SocialLink
+            iconSrc={BlueskyIcon}
+            label="Bluesky"
+            link="https://bsky.app/profile/queenaccila.bsky.social"
+        />
+
+        <SocialLink
+            iconSrc={LinkedIcon}
+            label="LinkedIn"
+            link="https://www.linkedin.com/in/helen-ho-5a496724a/"
         />
     </div>
 
