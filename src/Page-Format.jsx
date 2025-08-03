@@ -27,7 +27,7 @@ function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
         {/* Title section */}
         <motion.div
           initial={{ opacity: 0, y: 20}}
-          whileInView={{ opacity: 1, y: 0}}
+          animate={{ opacity: 1, y: 0}}
           transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true }}
         >
@@ -39,7 +39,7 @@ function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
           src={imageSrc}
           className="section-img"
           initial={{ opacity: 0, y: 30}}
-          whileInView={{ opacity: 1, y: 0}}
+          animate={{ opacity: 1, y: 0}}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         />
@@ -47,7 +47,7 @@ function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
         {/* Description section */}
         <motion.div
           initial={{ opacity: 0, y: 20}}
-          whileInView={{ opacity: 1, y: 0}}
+          animate={{ opacity: 1, y: 0}}
           transition={{ duration: 0.5, delay: 0.3 }}
           viewport={{ once: true }}
         >
@@ -57,7 +57,7 @@ function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
         {/* Button section */}
         <motion.div
           initial={{ opacity: 0, y: 20}}
-          whileInView={{ opacity: 1, y: 0}}
+          animate={{ opacity: 1, y: 0}}
           transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
         >
