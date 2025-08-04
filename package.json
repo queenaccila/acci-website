@@ -8,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:github": "vite build --mode github",
+    "build:cloudflare": "vite build --mode cloudflare"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
