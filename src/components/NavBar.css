@@ -1,6 +1,6 @@
 .navbar {
   background-color: #f9bec2;
-  width: 70vw;
+  width: 80vw;
   margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
@@ -56,7 +56,7 @@
 
 @media (max-width: 768px) {
   .navbar-links {
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -66,11 +66,11 @@
     margin-top: 5%;
     border-radius: 1rem;
     background-color: transparent;
-    width: 100%;
+    width: 100vw;
   }
 
   .navbar-single-link {
-    margin-bottom: 10%;
+    margin-bottom: 1vh;
     padding: 7%;
     border-radius: 40px;
     justify-content: left;
