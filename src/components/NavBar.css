@@ -1,6 +1,6 @@
 .navbar {
   background-color: #f9bec2;
-  width: 45rem;
+  width: 70vw;
   margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
@@ -9,12 +9,13 @@
 
 .navbar-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   list-style: none;
   margin-left: 2rem;
   margin-right: 2rem;
   padding: 1rem;
+  flex: 1;
 }
 
 .navbar-links li a {
@@ -42,6 +43,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    width: 70vw;
 }
 
 .navbar-single-link a {

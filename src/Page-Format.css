@@ -30,7 +30,7 @@
 
 .section-img {
   display: flex;
-  width: 30%;
+  width: 30vw;
   height: auto;
   align-items: center;
   justify-content: center;
