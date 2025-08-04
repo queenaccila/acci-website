@@ -1,4 +1,5 @@
 import '../Page-Format.css'
+import '../components/SocialLink.css'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import SocialsIcon from '../assets/bunny-drawings/Website-Drawings-Socials.png'
@@ -52,7 +53,7 @@ function Socials() {
     />
 
     {/* Links section */}
-    <div>
+    <div className="social-wrapper">
         <motion.div
             initial={{ opacity: 0, y: 30}}
             animate={{ opacity: 1, y: 0}}
