@@ -6,10 +6,11 @@ import AcciIcon from './assets/bunny-drawings/Web-Icon.png'
 import Navbar from './components/NavBar'
 import Description from './components/Description'
 import LinkButton from './components/Button'
+import AudioButton from './components/AudioButton'
 
 function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
   return (
-    <>
+    <>  
         {/* Title section */}
         <div className="title-wrapper">
               <div className="title-container">
@@ -63,6 +64,8 @@ function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
         >
           <LinkButton text={buttonName} redirect={buttonLink}/>
         </motion.div>
+
+        <AudioButton />
 
         <div className="bottom-empty">
           <p></p>

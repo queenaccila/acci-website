@@ -1,0 +1,21 @@
+.loading-bar {
+    height: 3rem;
+}
+
+.loading-text {
+    margin-top: 3rem;
+    font-size: 3em;
+    color: #f1ebdd;
+    font-weight: 500;
+}
+
+ @media (max-width: 768px) {
+    .loading-bar {
+        height: 2rem;
+    }
+
+    .loading-text {
+        margin-top: 1rem;
+        font-size: 1em;
+    }
+ }
