@@ -18,6 +18,10 @@ function AudioButton() {
     };
   }, []);
 
+  const toggleSound = () => {
+    
+  };
+
   const toggleAudio = () => {
     if (backgroundMusic.paused) {
       backgroundMusic.play();
