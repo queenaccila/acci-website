@@ -67,12 +67,10 @@
   --social-link-bg: #112540;
   --social-link-hovered: #7caeb7;
   --social-link-text: #ffffff;
-
-  /*--------- Dark Mode Variables ----------*/
   
   /*--------- Variables ----------*/
   background-color: var(--bg-color);
-  color: var(--description-color); /*---Title color---*/
+  color: var(--title-color); /*---Title color---*/
   
   /*--------- Main Features ---------*/
   font-family: 'Work-Sans', 'Riffic', system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -143,8 +141,12 @@ body {
   width: 100vw;
 }
 
+/*--------- Dark Mode Variables ----------*/
+
 body.dark {
   --bg-image: url('./assets/SiteGrid-DarkNoBG.png');
+  --title-color: #f1ebdd;
+  --description-color: #000000;
 }
 
 h1 {

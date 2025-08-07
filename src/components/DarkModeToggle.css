@@ -17,6 +17,11 @@ body.dark .theme-icon {
 }
 
 @media (max-width: 768px) {
+    .theme-button {
+        top: 0.25rem;
+        right: 0rem;
+    }
+
     .theme-icon {
         width: 2rem;
         height: 2rem;

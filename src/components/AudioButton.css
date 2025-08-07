@@ -12,6 +12,10 @@
     height: 4rem;
 }
 
+body.dark .audio-icon {
+    color: #f9bec2;
+}
+
 @media (max-width: 768px) {
     .audio-button {
         top: 0.25rem;

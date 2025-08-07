@@ -40,6 +40,17 @@
   align-items: center;
 }
 
+/*--------- Dark Mode Variables ----------*/
+
+body.dark .social-button {
+  background-color: #f9bec2;
+  color: #112540;
+}
+
+body.dark .social-button:hover {
+  background-color: #cd7b89;
+}
+
 @media (max-width: 768px) {
     .social-button {
         font-size: 1rem;

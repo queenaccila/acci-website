@@ -54,6 +54,28 @@
   color: #cd7b89;
 }
 
+/*--------- Dark Mode Variables ----------*/
+
+body.dark .navbar {
+  background-color: #cd7b89;
+}
+
+body.dark .navbar-links li a {
+  color: #f9bec2;
+}
+
+body.dark .navbar-links li a:hover {
+  color: #f1ebdd;
+}
+
+body.dark .navbar-single-link a:hover {
+  color: #f1ebdd;
+}
+
+body.dark .navbar-links .active-link {
+  color: #000000;
+}
+
 @media (max-width: 768px) {
   .navbar-links {
     display: flex;

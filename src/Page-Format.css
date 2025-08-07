@@ -46,6 +46,10 @@
   padding-bottom: 200px;
 }
 
+body.dark .title-wrapper {
+  background-color: #8296b7;
+}
+
 @media (max-width: 768px) {
   .title-container {
     flex-direction: column;

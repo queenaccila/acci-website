@@ -10,6 +10,11 @@
     line-height: clamp(1rem, 3vw, 2rem);
 }
 
+body.dark .desc-rect {
+    background-color: #8296b7;
+    --description-color: white;
+}
+
 @media (max-width: 768px) {
     .desc-rect {
         padding: 5%;

@@ -5,6 +5,11 @@ import backgroundMusic from './Audio';
 
 function AudioButton() {
   const [audio, setAudio] = useState(!backgroundMusic.paused);
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle("dark", isDark);
+  }, [isDark]);
 
   useEffect(() => {
     const updateAudioState = () => setAudio(!backgroundMusic.paused);
@@ -17,10 +22,6 @@ function AudioButton() {
       backgroundMusic.removeEventListener('pause', updateAudioState);
     };
   }, []);
-
-  const toggleSound = () => {
-    
-  };
 
   const toggleAudio = () => {
     if (backgroundMusic.paused) {

@@ -6,9 +6,14 @@ import AcciIcon from './assets/bunny-drawings/Web-Icon.png'
 import Navbar from './components/NavBar'
 import Description from './components/Description'
 import LinkButton from './components/Button'
-import AudioButton from './components/AudioButton'
 
 function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle("dark", isDark);
+  }, [isDark]);
+  
   return (
     <>  
         {/* Title section */}

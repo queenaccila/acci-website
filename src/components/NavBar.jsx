@@ -1,10 +1,12 @@
 import './NavBar.css'
 import { NavLink } from 'react-router-dom' 
 import { Link, useLocation } from 'react-router-dom'
+import { useState, useEffect } from "react";
 
 import BlueHeart from '../assets/Heart-Blue.png'
 
 function Navbar() {
+  const [isDark, setIsDark] = useState(false);
   const location = useLocation();
 
   const navLinks = [
@@ -14,6 +16,10 @@ function Navbar() {
     { path: '/blog', label: 'Blog' }, 
     { path: '/socials', label: 'Socials' },
   ];
+
+  useEffect(() => {
+    document.body.classList.toggle("dark", isDark);
+  }, [isDark]);
 
   return (
     <nav className="navbar">

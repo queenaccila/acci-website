@@ -23,6 +23,21 @@
   transition-duration: 200ms;
 }
 
+body.dark .custom-button {
+  background-color: #f9bec2;
+  color: black;
+}
+
+body.dark .custom-button:hover {
+  color: white;
+  background-color: #cd7b89;
+}
+
+body.dark .custom-button:touch {
+  color: white;
+  background-color: #cd7b89;
+}
+
 .button-container {
     display: flex;
     justify-content: center;

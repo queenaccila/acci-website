@@ -1,10 +1,17 @@
 import './Button.css';
+import { useState, useEffect } from "react";
 import buttonSound from './ButtonAudio';
 
 function LinkButton({ text, redirect, onClick }) {
+  const [isDark, setIsDark] = useState(false);
+  
   const toggleSound = () => {
     buttonSound.play()
   };
+
+  useEffect(() => {
+    document.body.classList.toggle("dark", isDark);
+  }, [isDark]);
   
   return (
     <div className="button-container" onClick={toggleSound}>
