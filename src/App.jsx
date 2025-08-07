@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio.jsx';
 import Blog from './pages/Blog.jsx';
 import Socials from './pages/Socials.jsx';
 import FadeWrapper from './components/FadingScreen.jsx';
+import AudioButton from './components/AudioButton.jsx';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,6 +20,7 @@ function App() {
         <LoadingScreen onFinish={() => setIsLoading(false)} />
       ) : (
         <FadeWrapper>
+          <AudioButton />
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/about" element={<AboutMe />} />

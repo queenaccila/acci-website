@@ -65,8 +65,6 @@ function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
           <LinkButton text={buttonName} redirect={buttonLink}/>
         </motion.div>
 
-        <AudioButton />
-
         <div className="bottom-empty">
           <p></p>
         </div>

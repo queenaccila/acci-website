@@ -8,6 +8,6 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'docs'
     },
-    plugins: [react()],
+    plugins: [react()]
   }
 })

@@ -7,6 +7,7 @@ import SocialsIcon from '../assets/bunny-drawings/Website-Drawings-Socials.png'
 import AcciIcon from '../assets/bunny-drawings/Web-Icon.png'
 import Navbar from '../components/NavBar'
 import SocialLink from '../components/SocialLink'
+import AudioButton from '../components/AudioButton'
 
 import ItchIcon from '../assets/social-icons/itch.io-icon.png'
 import BlueskyIcon from '../assets/social-icons/Bluesky_Logo.svg.png'

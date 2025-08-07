@@ -1,3 +1,25 @@
+.audio-button {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
 .audio-icon {
-    background-color: red;
+    color: #112540;
+    width: 4rem;
+    height: 4rem;
+}
+
+@media (max-width: 768px) {
+    .audio-button {
+        top: 0.25rem;
+        left: 0rem;
+    }
+    
+    .audio-icon {
+        width: 2rem;
+        height: 2rem;
+    }
 }

@@ -1,16 +1,20 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import backgroundMusic from './Audio';
 import './LoadingScreen.css';
 
 export default function LoadingScreen({ onFinish }) {
   const [progress, setProgress] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [waitingForClick, setWaitingForClick] = useState(false);
 
   useEffect(() => {
     let interval = setInterval(() => {
       setProgress(prev => {
         if (prev >= 100) {
           clearInterval(interval);
-          setTimeout(onFinish, 300);
+          setIsLoaded(true);
+          setWaitingForClick(true); // wait for click
           return 100;
         }
         return prev + 2;
@@ -18,7 +22,22 @@ export default function LoadingScreen({ onFinish }) {
     }, 40); // speed adjustment
 
     return () => clearInterval(interval);
-  }, [onFinish]);
+  }, []);
+
+  useEffect(() => {
+    if (waitingForClick) {
+      const handleClick = () => {
+        backgroundMusic.play().catch((err) => {
+          console.warn("Autoplay failed:", err);
+        });
+        setWaitingForClick(false);
+        onFinish();
+        window.removeEventListener('click', handleClick);
+      };
+      window.addEventListener('click', handleClick);
+      return () => window.removeEventListener('click', handleClick);
+    }
+  }, [waitingForClick, onFinish]);
 
   return (
     <AnimatePresence>
@@ -55,7 +74,9 @@ export default function LoadingScreen({ onFinish }) {
             transition={{ ease: 'easeInOut', duration: 0.2 }}
           />
         </div>
-        <div className="loading-text">Loading...</div>
+        <div className="loading-text">
+          {isLoaded ? 'Click anywhere to continue' : 'Loading...'}
+        </div>
       </motion.div>
     </AnimatePresence>
   );
