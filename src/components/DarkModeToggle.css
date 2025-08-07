@@ -1,0 +1,24 @@
+.theme-button {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.theme-icon {
+    color: #112540;
+    width: 4rem;
+    height: 4rem;
+}
+
+body.dark .theme-icon {
+    color: #f9bec2;
+}
+
+@media (max-width: 768px) {
+    .theme-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}

@@ -43,14 +43,32 @@
 /*----------------------- MAIN ------------------------*/
 
 :root {
-  --bg-color: #f1ebdd;
   --bg-opacity: 1;
+  --bg-color: #f1ebdd;
 
+  /*--------- Light Mode Variables ----------*/
+  --bg-image: url('./assets/SiteGrid-NoBG.png');
   --title-color: #112540;
+  --rect-top: #f9bec2;
+
+  --navbar-color: #f9bec2;
+  --navbar-text: #000000;
+  --navbar-text-selected: #ffffff;
+  --navbar-text-hovered: #cd7b89; 
+
+  --description-bg: #ffffff;
   --description-color: #000000;
-  --this-section-color: #ffffff;
-  --other-section-color: #000000;
-  --button-text-color: #ffffff;
+
+  --button-bg: #112540;
+  --button-text: #ffffff;
+  --button-bg-hovered: #7caeb7;
+  --button-text-hovered: #112540;
+
+  --social-link-bg: #112540;
+  --social-link-hovered: #7caeb7;
+  --social-link-text: #ffffff;
+
+  /*--------- Dark Mode Variables ----------*/
   
   /*--------- Variables ----------*/
   background-color: var(--bg-color);
@@ -117,12 +135,16 @@ body {
   justify-content: center;
 
   /*-----Tiled Background-----*/
-  background-image: url('./assets/SiteGrid-NoBG.png');
+  background-image: var(--bg-image);
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: 30vw 30vw;
   min-height: 100vh;
   width: 100vw;
+}
+
+body.dark {
+  --bg-image: url('./assets/SiteGrid-DarkNoBG.png');
 }
 
 h1 {
@@ -145,24 +167,11 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #cd7b89;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 @media (max-width: 768px) {

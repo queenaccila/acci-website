@@ -10,6 +10,7 @@ import Blog from './pages/Blog.jsx';
 import Socials from './pages/Socials.jsx';
 import FadeWrapper from './components/FadingScreen.jsx';
 import AudioButton from './components/AudioButton.jsx';
+import DarkModeToggle from './components/DarkModeToggle.jsx'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,6 +22,7 @@ function App() {
       ) : (
         <FadeWrapper>
           <AudioButton />
+          <DarkModeToggle />
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/about" element={<AboutMe />} />
