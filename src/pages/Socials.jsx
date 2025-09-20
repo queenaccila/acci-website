@@ -2,17 +2,15 @@ import '../Page-Format.css'
 import '../components/SocialLink.css'
 import { motion } from 'framer-motion'
 import { assets } from '../components/Assets.js'
-import SocialsIcon from '../assets/bunny-drawings/Website-Drawings-Socials.png'
 
-import AcciIcon from '../assets/bunny-drawings/Web-Icon.png'
 import Navbar from '../components/NavBar'
 import SocialLink from '../components/SocialLink'
 
-import ItchIcon from '../assets/social-icons/itch.io-icon.png'
-import BlueskyIcon from '../assets/social-icons/Bluesky_Logo.svg.png'
-import GitHubIconLight from '../assets/social-icons/GitHub_Invertocat_Light.png'
-import LinkedIcon from '../assets/social-icons/LinkedIn_icon.png'
-import PinterestIcon from '../assets/social-icons/pinterest.png'
+import { FaItchIo } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaBluesky } from "react-icons/fa6";
+import { FaPinterest } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 function Socials() {
   return (
@@ -60,9 +58,9 @@ function Socials() {
             viewport={{ once: true }}
         >
             <SocialLink
-                iconSrc={ItchIcon}
-                label="itch.io"
-                link="https://queenaccila.itch.io/"
+                iconSrc={<FaGithub />}
+                label="GitHub"
+                link="https://github.com/queenaccila"
             />
         </motion.div>
 
@@ -73,9 +71,9 @@ function Socials() {
             viewport={{ once: true }}
         >
             <SocialLink
-                iconSrc={GitHubIconLight}
-                label="GitHub"
-                link="https://github.com/queenaccila"
+                iconSrc={<FaItchIo />}
+                label="itch.io"
+                link="https://queenaccila.itch.io/"
             />
         </motion.div>
 
@@ -86,7 +84,7 @@ function Socials() {
             viewport={{ once: true }}
         >
             <SocialLink
-                iconSrc={BlueskyIcon}
+                iconSrc={<FaBluesky />}
                 label="Bluesky"
                 link="https://bsky.app/profile/queenaccila.bsky.social"
             />
@@ -99,7 +97,7 @@ function Socials() {
             viewport={{ once: true }}
         >
             <SocialLink
-                iconSrc={PinterestIcon}
+                iconSrc={<FaPinterest />}
                 label="Pinterest"
                 link="https://www.pinterest.com/queenaccila/"
             />
@@ -112,7 +110,7 @@ function Socials() {
             viewport={{ once: true }}
         >
             <SocialLink
-                iconSrc={LinkedIcon}
+                iconSrc={<FaLinkedin />}
                 label="LinkedIn"
                 link="https://www.linkedin.com/in/helen-ho-5a496724a/"
             />

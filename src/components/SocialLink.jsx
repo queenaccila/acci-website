@@ -1,24 +1,21 @@
 import './SocialLink.css';
 import buttonSound from './ButtonAudio';
-import { useState, useEffect } from "react";
+import { IconContext } from "react-icons";
 
 function SocialLink({ iconSrc, label, link }) {
-  const [isDark, setIsDark] = useState(false);
   
   const toggleSound = () => {
     buttonSound.play()
   };
 
-  useEffect(() => {
-    document.body.classList.toggle("dark", isDark);
-  }, [isDark]);
-
   return (
     <div className="social-link-container" onClick={toggleSound}>
+      <IconContext.Provider value={{ size: "2rem" }}>
         <a href={link} target="_blank" rel="noopener noreferrer" className="social-button">
-            <img src={iconSrc} alt={`${label} icon`} className="social-icon" />
+            <span>{iconSrc}</span>
             <span className="social-label">{label}</span>
         </a>
+      </IconContext.Provider>
     </div>
   );
 }
