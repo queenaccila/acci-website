@@ -1,8 +1,5 @@
 import { useState } from 'react';
-import PageFormat from './Page-Format.jsx'
-import NavBar from "./components/NavBar"
 import LoadingScreen from './components/LoadingScreen.jsx'
-import FadingScreen from './components/FadingScreen.jsx'
 import { Routes, Route } from 'react-router-dom';
 import AboutMe from './pages/AboutMe.jsx'
 import Portfolio from './pages/Portfolio.jsx';
@@ -10,7 +7,6 @@ import Blog from './pages/Blog.jsx';
 import Socials from './pages/Socials.jsx';
 import FadeWrapper from './components/FadingScreen.jsx';
 import AudioButton from './components/AudioButton.jsx';
-import DarkModeToggle from './components/DarkModeToggle.jsx'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,7 +18,6 @@ function App() {
       ) : (
         <FadeWrapper>
           <AudioButton />
-          <DarkModeToggle />
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/about" element={<AboutMe />} />

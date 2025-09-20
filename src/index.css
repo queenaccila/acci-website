@@ -144,7 +144,7 @@ body {
 /*--------- Dark Mode Variables ----------*/
 
 body.dark {
-  --bg-image: url('./assets/SiteGrid-DarkNoBG.png');
+  --bg-image: url('https://acci-blog.b-cdn.net/website-assets/SiteGrid-DarkNoBG.png');
   --title-color: #f1ebdd;
   --description-color: #000000;
 }

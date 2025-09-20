@@ -1,11 +1,11 @@
 import PageFormat from '../Page-Format.jsx'
-import AboutMeIcon from '../assets/bunny-drawings/Website-Drawings-About-Me.png'
+import { assets } from '../components/Assets.js'
 
 function AboutMe() {
   return (
     <PageFormat
         title="About Me"
-        imageSrc={AboutMeIcon}
+        imageSrc={assets.about}
         description={[
             <b>Hi, I'm Helen!</b>,
             <i>She/Her - 23 - 9/29</i>,

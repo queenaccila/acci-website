@@ -1,20 +1,18 @@
 import '../Page-Format.css'
 import '../components/SocialLink.css'
-import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { assets } from '../components/Assets.js'
 import SocialsIcon from '../assets/bunny-drawings/Website-Drawings-Socials.png'
 
 import AcciIcon from '../assets/bunny-drawings/Web-Icon.png'
 import Navbar from '../components/NavBar'
 import SocialLink from '../components/SocialLink'
-import AudioButton from '../components/AudioButton'
 
 import ItchIcon from '../assets/social-icons/itch.io-icon.png'
 import BlueskyIcon from '../assets/social-icons/Bluesky_Logo.svg.png'
-import GitHubIconDark from '../assets/social-icons/github-icon.png'
 import GitHubIconLight from '../assets/social-icons/GitHub_Invertocat_Light.png'
 import LinkedIcon from '../assets/social-icons/LinkedIn_icon.png'
-import YouTubeIcon from '../assets/social-icons/YouTube_icon.png'
+import PinterestIcon from '../assets/social-icons/pinterest.png'
 
 function Socials() {
   return (
@@ -22,7 +20,7 @@ function Socials() {
     {/* Title section */}
         <div className="title-wrapper">
             <div className="title-container">
-                <img src={AcciIcon} className="title-icon" />
+                <img src={assets.icon} className="title-icon" />
                 <div>
                     <h1>Accila</h1>
                     <h3>Software Dev + Tech Artist</h3>
@@ -45,7 +43,7 @@ function Socials() {
     
     {/* Image section */}
     <motion.img
-        src={SocialsIcon}
+        src={assets.socials}
         className="section-img"
         initial={{ opacity: 0, y: 30}}
         animate={{ opacity: 1, y: 0}}
@@ -88,9 +86,9 @@ function Socials() {
             viewport={{ once: true }}
         >
             <SocialLink
-                iconSrc={YouTubeIcon}
-                label="YouTube"
-                link="https://www.youtube.com/@accila"
+                iconSrc={BlueskyIcon}
+                label="Bluesky"
+                link="https://bsky.app/profile/queenaccila.bsky.social"
             />
         </motion.div>
 
@@ -101,9 +99,9 @@ function Socials() {
             viewport={{ once: true }}
         >
             <SocialLink
-                iconSrc={BlueskyIcon}
-                label="Bluesky"
-                link="https://bsky.app/profile/queenaccila.bsky.social"
+                iconSrc={PinterestIcon}
+                label="Pinterest"
+                link="https://www.pinterest.com/queenaccila/"
             />
         </motion.div>
 
@@ -119,6 +117,8 @@ function Socials() {
                 link="https://www.linkedin.com/in/helen-ho-5a496724a/"
             />
         </motion.div>
+
+
     </div>
 
     <div className="bottom-empty">

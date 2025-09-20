@@ -1,25 +1,18 @@
 import './Page-Format.css'
-import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { assets } from './components/Assets'
 
-import AcciIcon from './assets/bunny-drawings/Web-Icon.png'
 import Navbar from './components/NavBar'
 import Description from './components/Description'
 import LinkButton from './components/Button'
 
 function PageFormat({title, imageSrc, description, buttonName, buttonLink}) {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    document.body.classList.toggle("dark", isDark);
-  }, [isDark]);
-  
   return (
     <>  
         {/* Title section */}
         <div className="title-wrapper">
               <div className="title-container">
-                  <img src={AcciIcon} className="title-icon" />
+                  <img src={assets.icon} className="title-icon" />
                   <div>
                     <h1>Accila</h1>
                     <h3>Software Dev + Tech Artist</h3>

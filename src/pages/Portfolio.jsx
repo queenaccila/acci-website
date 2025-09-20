@@ -1,11 +1,11 @@
 import PageFormat from '../Page-Format.jsx'
-import PortfolioIcon from '../assets/bunny-drawings/Website-Drawings-Portfolio.png'
+import { assets } from '../components/Assets.js'
 
 function Portfolio() {
   return (
     <PageFormat
         title="My Portfolio"
-        imageSrc={PortfolioIcon}
+        imageSrc={assets.portfolio}
         description={[
             "A collection of projects I’ve made over the years — from games to creative tech projects. I have some work on a variety of things such as games, art, and other various tech work I did over the years."
         ]}
