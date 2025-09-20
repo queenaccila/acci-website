@@ -25,6 +25,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/socials" element={<Socials />} />
           </Routes>
+          <p className='copyright'>© 2025 - Accila</p>
         </FadeWrapper>
       )}
     </>

@@ -47,7 +47,7 @@
   --bg-color: #f1ebdd;
 
   /*--------- Light Mode Variables ----------*/
-  --bg-image: url('./assets/SiteGrid-NoBG.png');
+  --bg-image: url('https://acci-blog.b-cdn.net/website-assets/SiteGrid-NoBG.png');
   --title-color: #112540;
   --rect-top: #f9bec2;
 
@@ -168,13 +168,24 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #cd7b89;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.copyright {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
 
 @media (max-width: 768px) {
   body {
